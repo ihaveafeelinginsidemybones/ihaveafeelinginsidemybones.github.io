@@ -9,9 +9,9 @@
 		
 		// Check if the user-agent contains "Mobile" or "Android"
 		if (userAgent.match(/Mobile/i) || userAgent.match(/Android/i)) {
-			rawText.innerText = "This is a mobile device.";
+			rawText.innerHTML = "This is a mobile device.";
 		} else {
-			rawText.innerText = "This is not a mobile device.";
+			rawText.innerHTML = "This is not a mobile device.";
 		}
 	</script>
 </body>
