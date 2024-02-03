@@ -2,17 +2,18 @@
 <html>
 <head><meta name="color-scheme" content="light dark"></head>
 <body>
-	<pre name="rawText" style="word-wrap: break-word; white-space: pre-wrap;">
-	<script>
-		// JavaScript to detect the user-agent
-		var userAgent = navigator.userAgent;
+	<pre style="word-wrap: break-word; white-space: pre-wrap;">
+		<script>
+			// JavaScript to detect the user-agent
+			var userAgent = navigator.userAgent;
 			
-		// Check if the user-agent contains "Mobile" or "Android"	
-		if (userAgent.match(/Mobile/i) || userAgent.match(/Android/i)) {	
-			document.getElementById("rawText").textContent = "This is a mobile device.";
-		} else {
-			document.getElementById("rawText").textContent = "This is not a mobile device.";
-		}
-	</script>
+			// Check if the user-agent contains "Mobile" or "Android"
+			if (userAgent.match(/Mobile/i) || userAgent.match(/Android/i)) {
+				document.getElementById("rawText").textContent = "This is a mobile device.";
+			} else {
+				document.getElementById("rawText").textContent = "This is not a mobile device.";
+			}
+		</script>
+	</pre>
 </body>
 </html>
