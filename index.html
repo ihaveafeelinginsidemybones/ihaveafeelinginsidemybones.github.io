@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>User-Agent Detection</title>
-</head>
 <body>
-    <h1>Welcome to My GitHub Pages Website</h1>
-    
     <script>
         // JavaScript to detect the user-agent
         var userAgent = navigator.userAgent;
         
         // Check if the user-agent contains "Mobile" or "Android"
         if (userAgent.match(/Mobile/i) || userAgent.match(/Android/i)) {
-            document.write('<p>This is a mobile device.</p>');
+            document.body.innerText = "This is a mobile device.";
         } else {
-            document.write('<p>This is not a mobile device.</p>');
+            document.body.innerText = "This is not a mobile device.";
         }
     </script>
 </body>
