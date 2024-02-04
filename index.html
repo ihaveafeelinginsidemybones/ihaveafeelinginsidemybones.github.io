@@ -4,14 +4,13 @@
 <body>
 	<pre name="rawText" style="word-wrap: break-word; white-space: pre-wrap;"/>
 	<script>
-		// JavaScript to detect the user-agent
 		var userAgent = navigator.userAgent;
-		var rawText = document.querySelector("pre[name='rawText']"); // Add this line to select the <pre> element
-		// Check if the user-agent contains "Mobile" or "Android"
-		if (userAgent.match(/Mobile/i) || userAgent.match(/Android/i)) {
-			rawText.innerHTML = "This is a mobile device.";
-		} else {
-			rawText.innerHTML = "This is not a mobile device.";
+		var rawText = document.querySelector("pre[name='rawText']");
+		switch(userAgent)
+		{
+			default:
+				rawText.innerHTML = navigator.userAgent;
+				break;
 		}
 	</script>
 </body>
