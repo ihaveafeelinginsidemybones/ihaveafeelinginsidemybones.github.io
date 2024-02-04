@@ -6,7 +6,7 @@
 	<script>
 		// JavaScript to detect the user-agent
 		var userAgent = navigator.userAgent;
-		
+		var rawText = document.querySelector("pre[name='rawText']"); // Add this line to select the <pre> element
 		// Check if the user-agent contains "Mobile" or "Android"
 		if (userAgent.match(/Mobile/i) || userAgent.match(/Android/i)) {
 			rawText.innerHTML = "This is a mobile device.";
